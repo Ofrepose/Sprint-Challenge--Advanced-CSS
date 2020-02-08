@@ -1,1 +1,33 @@
-// Navigation code here
+// Navigation code 
+
+nav{
+	.centerFlex();
+	height: 150px;
+	align-content: center;
+	background-color: lighten(lightgray,15%);
+	position: fixed;
+	opacity: .85;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 100%;
+
+	h1.title{
+		width: 100%;
+		font-size: 40px;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	a.navLinks{
+		font-size: 20px;
+		padding: 0 15px;
+		text-decoration: none;
+		color: black;
+
+		@media @phone{
+			font-size: 15px;
+		}
+	}
+}
+
